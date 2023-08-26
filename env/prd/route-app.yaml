@@ -1,0 +1,6 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: rt-surote-py-header
+spec:
+  host: rt-surote-py-header.apps.4smz6.dynamic.opentlc.com
