@@ -3,4 +3,8 @@ kind: Route
 metadata:
   name: rt-surote-py-header
 spec:
+  to:
+    kind: Service
+    name: prd-svc-surote-py-header
+    weight: 100
   host: rt-surote-py-header.apps.4smz6.dynamic.opentlc.com
