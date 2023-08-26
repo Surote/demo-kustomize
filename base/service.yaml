@@ -6,7 +6,7 @@ metadata:
     app: svc-surote-py-header
 spec:
   ports:
-    - port: 8080
+    - port: 5124
   selector:
     app: surote-py-header
   type: ClusterIP
