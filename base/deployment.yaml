@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: surote-py-header
+  labels:
+    app: surote-py-header
+spec:
+  selector:
+    matchLabels:
+      app: surote-py-header
+  template:
+    metadata:
+      labels:
+        app: surote-py-header
+    spec:
+      containers:
+        - name: surote-py-header
+          image: surote/py-http-echo
+          ports:
+            - containerPort: 8080
