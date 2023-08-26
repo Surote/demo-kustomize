@@ -18,3 +18,9 @@ spec:
           image: surote/py-http-echo
           ports:
             - containerPort: 8080
+          env:
+            - name: BE_URL
+              valueFrom:
+                configMapKeyRef:
+                  name: env
+                  key: BE_URL

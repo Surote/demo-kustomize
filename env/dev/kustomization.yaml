@@ -7,4 +7,9 @@ patches:
 - path: deployment.yaml
 - path: route-app.yaml
 
+configMapGenerator:
+  - name: env
+    envs:
+      - env.conf
+
 namespace: surote-demo-dev
