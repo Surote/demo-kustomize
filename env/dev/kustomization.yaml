@@ -12,5 +12,21 @@ configMapGenerator:
   - name: env
     envs:
       - env.conf
+  - name: sealed-secret-trigger
+    files:
+    - demo-sealed-secret.yaml
+
+generatorOptions:
+  annotations:
+    sealedsecrets.bitnami.com/managed: "true"
+    sealedsecrets.bitnami.com/namespace-wide: "true"
+  labels:
+    currently-used-by-kustomize: "true"
+
+secretGenerator:
+  - name: dev-mysecret
+    type: opaque
+
+
 
 namespace: surote-demo-dev

@@ -4,3 +4,13 @@ metadata:
   name: surote-py-header
 spec:
   replicas: 2
+  template:
+    spec:
+      containers:
+      - name: surote-py-header
+        image: surote/py-http-echo
+        envFrom:
+        - secretRef:
+            name: dev-mysecret
+        - configMapRef:
+              name: sealed-secret-trigger
