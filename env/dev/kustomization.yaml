@@ -18,7 +18,7 @@ configMapGenerator:
 
 secretGenerator:
   - name: dev-mysecret
-    type: opaque
+    type: Opaque
 
 
 generatorOptions:
