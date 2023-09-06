@@ -16,17 +16,16 @@ configMapGenerator:
     files:
     - demo-sealed-secret.yaml
 
+secretGenerator:
+  - name: dev-mysecret
+    type: opaque
+
+
 generatorOptions:
   annotations:
     sealedsecrets.bitnami.com/managed: "true"
     sealedsecrets.bitnami.com/namespace-wide: "true"
   labels:
     currently-used-by-kustomize: "true"
-
-secretGenerator:
-  - name: dev-mysecret
-    type: opaque
-
-
 
 namespace: surote-demo-dev
