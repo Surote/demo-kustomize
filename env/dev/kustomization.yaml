@@ -29,3 +29,6 @@ generatorOptions:
     currently-used-by-kustomize: "true"
 
 namespace: surote-demo-dev
+
+configurations:
+  - configuration/name-reference.yaml
