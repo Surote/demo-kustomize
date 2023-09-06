@@ -10,7 +10,5 @@ spec:
       - name: surote-py-header
         image: surote/py-http-echo
         envFrom:
-        - secretRef:
-            name: dev-mysecret
         - configMapRef:
               name: sealed-secret-trigger
