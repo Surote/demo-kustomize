@@ -24,3 +24,8 @@ spec:
                 configMapKeyRef:
                   name: env
                   key: BE_URL
+            - name: dev-mysecret
+              valueFrom:
+                secretKeyRef:
+                  name: dev-mysecret
+                  key: foo
