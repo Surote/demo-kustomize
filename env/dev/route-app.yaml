@@ -5,6 +5,6 @@ metadata:
 spec:
   to:
     kind: Service
-    name: dev-svc-surote-py-header
+    name: svc-surote-py-header
     weight: 100
   host: rt-dev-surote-py-header.apps.x74v2.dynamic.opentlc.com
