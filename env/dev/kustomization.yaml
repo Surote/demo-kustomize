@@ -14,6 +14,3 @@ configMapGenerator:
   - name: sealed-secret-trigger
     files:
     - demo-sealed-secret.yaml
-
-configurations:
-  - configuration/name-reference.yaml
