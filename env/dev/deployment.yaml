@@ -8,7 +8,7 @@ spec:
     spec:
       containers:
         - name: surote-py-header
-          image: quay.io/rh_ee_swongpai/py-http-header:4ca1666559c3204d65fcb824c4cc26381f13ac74
+          image: quay.io/rh_ee_swongpai/py-http-header:3cfea464a3ea018a77fa6b77135b1db20ed211ca
           envFrom:
             - secretRef:
                 name: demo-kus
